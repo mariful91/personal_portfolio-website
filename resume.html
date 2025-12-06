@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume – Mariful Haque</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+/* RESET */
+* {margin:0; padding:0; box-sizing:border-box;}
+body {
+    font-family:"Poppins", sans-serif;
+    background: linear-gradient(135deg, #0A192F, #112240, #0A192F);
+    min-height:100vh;
+    color:#E6F1FF;
+}
+
+/* Navbar */
+.navbar {
+    text-align:center;
+    padding:20px 0;
+    background: rgba(10,25,47,0.6);
+    backdrop-filter: blur(10px);
+    border-bottom:1px solid rgba(255,255,255,0.08);
+}
+.navbar a {
+    color:#CCD6F6;
+    margin:0 18px;
+    text-decoration:none;
+    font-weight:500;
+    font-size:16px;
+    transition:.3s;
+}
+.navbar a:hover{color:#64FFDA;}
+
+/* Container */
+.container {
+    max-width:900px;
+    margin:70px auto;
+    padding:20px;
+    text-align:center;
+}
+h1 {
+    font-size:40px;
+    font-weight:600;
+    letter-spacing:1px;
+    color:#64FFDA;
+    margin-bottom:20px;
+}
+
+/* Resume Grid (Card Style Like Contact Page) */
+.resume-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+/* Card */
+.card {
+    background: rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.09);
+    backdrop-filter: blur(10px);
+    border-radius:18px;
+    padding:30px;
+    text-align:left;
+    transition:0.35s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow:0 12px 40px rgba(100,255,218,0.15);
+    border-color:#64FFDA;
+}
+.card h3 {
+    font-size:22px;
+    color:#64FFDA;
+    margin-bottom:10px;
+    border-bottom:1px solid #64FFDA;
+    padding-bottom:5px;
+}
+.card p {
+    font-size:16px;
+    color:#C9D1E0;
+    line-height:1.6;
+}
+
+/* Footer */
+footer {
+    margin-top:60px;
+    padding:20px 0;
+    text-align:center;
+    color:#A8B2D1;
+    border-top:1px solid rgba(255,255,255,0.1);
+    background: rgba(10,25,47,0.7);
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a style="color:#64FFDA;" href="resume.html">Resume</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<div class="container">
+<h1>My Resume</h1>
+
+<div class="resume-grid">
+
+    <!-- Personal Info -->
+    <div class="card">
+        <h3>Personal Information</h3>
+        <p><strong>Name:</strong> Mariful Haque</p>
+        <p><strong>Address:</strong> Tarakanda, Mymensingh</p>
+        <p><strong>Phone:</strong> 01869199709</p>
+        <p><strong>Email:</strong> <a href="mailto:mdmarifulislamashik@gmail.com" style="color:#64FFDA;">mdmarifulislamashik@gmail.com</a></p>
+    </div>
+
+    <!-- Summary -->
+    <div class="card">
+        <h3>Professional Summary</h3>
+        <p>
+        Passionate Software Engineer with expertise in Flutter, Python, and web development. 
+        Dedicated to creating high-quality applications, clean code, and engaging digital experiences.
+        </p>
+    </div>
+
+    <!-- Education -->
+    <div class="card">
+        <h3>Education</h3>
+        <p>Diploma in Computer Science & Technology – Currently Studying</p>
+    </div>
+
+    <!-- Skills -->
+    <div class="card">
+        <h3>Technical Skills</h3>
+        <p>Flutter, Python, HTML, CSS, JavaScript, Firebase, RESTful API, UI/UX Design</p>
+    </div>
+
+    <!-- Projects -->
+    <div class="card">
+        <h3>Projects</h3>
+        <p>Multiple small projects developed in Flutter, Python, and web technologies to strengthen skills and portfolio.</p>
+    </div>
+
+</div>
+</div>
+
+<footer>
+   © 2025 Mariful Haque — All Rights Reserved
+</footer>
+
+</body>
+</html>

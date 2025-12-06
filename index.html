@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mariful | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0A192F, #112240, #0A192F);
+    color: #E6F1FF;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(10,25,47,0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    z-index: 1000;
+    flex-wrap: wrap;
+}
+
+.navbar .logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #64FFDA;
+    flex-shrink: 0;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 25px;
+    flex-shrink: 0; /* important: prevent links from shrinking */
+}
+
+.navbar .nav-links a {
+    color: #CCD6F6;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s;
+    white-space: nowrap; /* prevent wrapping */
+}
+
+.navbar .nav-links a:hover,
+.navbar .nav-links a.active {
+    color: #64FFDA;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    padding: 120px 50px 50px 50px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.hero-text { max-width: 550px; }
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #64FFDA;
+    margin-bottom: 1rem;
+}
+
+.hero-text p.subtitle {
+    font-size: 1.3rem;
+    color: #A8B2D1;
+    margin-bottom: 1.5rem;
+}
+
+.typing-text {
+    font-size: 1.1rem;
+    min-height: 24px;
+    margin-bottom: 2rem;
+    color: #E6F1FF;
+    font-weight: 500;
+}
+
+/* Buttons */
+.hero-btns .btn,
+.hero-btns .btn-outline {
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-weight: 500;
+    margin: 0 8px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.btn { background: #64FFDA; color: #0A192F; }
+.btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(100,255,218,0.3); }
+
+.btn-outline { border: 2px solid #64FFDA; color: #64FFDA; background: transparent; }
+.btn-outline:hover { background: rgba(100,255,218,0.1); transform: translateY(-3px); }
+
+/* Hero image */
+.hero-image img {
+    max-width: 300px;
+    border-radius: 50%;
+    border: 5px solid rgba(100,255,218,0.4);
+    box-shadow: 0 15px 40px rgba(100,255,218,0.2);
+    transition: transform 0.3s;
+}
+.hero-image img:hover { transform: scale(1.05); }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(10,25,47,0.7);
+    color: #A8B2D1;
+    font-size: 0.95rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Responsive */
+@media(max-width: 1024px){
+    .navbar { padding: 15px 30px; }
+    .navbar .nav-links { gap: 15px; justify-content: flex-end; }
+}
+@media(max-width: 768px){
+    .hero { flex-direction: column; gap: 30px; text-align: center; }
+    .hero-text { text-align: center; }
+    .navbar { padding: 15px 20px; }
+    .navbar .nav-links { flex-wrap: wrap; justify-content: center; gap: 12px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">Mariful</div>
+    <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Hello, I'm Mariful</h1>
+        <p class="subtitle">Flutter Developer • Aspiring Software Engineer</p>
+        <p class="typing-text" id="typing"></p>
+        <div class="hero-btns">
+            <a href="projects.html" class="btn">View Projects</a>
+            <a href="contact.html" class="btn-outline">Contact Me</a>
+        </div>
+    </div>
+    <div class="hero-image">
+        <img src="https://scontent.fdac34-1.fna.fbcdn.net/v/t39.30808-6/481023275_1098831368658039_2823512658536917686_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeG0W2Ezug9semQcFWlifWzuYqU0T-HWMfZipTRP4dYx9siOL-5PoAYQC6jqGE7zEeavhaxMGjEKQkUTZy7gAunY&_nc_ohc=JCMJD_Y2PzQQ7kNvwEVrsXH&_nc_oc=AdkqZeKFUsJrB6-Gc9dEaoljkZB-Wuk8txDcSAz5y17iGjF1xUdnarp2RLfF5OG4L2xbnodWuhXsmoDYBO6tAd-u&_nc_zt=23&_nc_ht=scontent.fdac34-1.fna&_nc_gid=foRtEf3IJNjAqO0F2s9iog&oh=00_AfmoL3SMoFhof5_t8cPHhikpXOC1nrauDn31zPDJG0jM8w&oe=693839B6" alt="Mariful">
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    © <span id="year"></span> Mariful Haque. All Rights Reserved.
+</footer>
+
+<script>
+// Typing Effect
+let textArray = [
+    "I build modern UI with Flutter.",
+    "I write clean, scalable code.",
+    "I love solving real-world problems."
+];
+let index = 0, charIndex = 0;
+function typeEffect() {
+    let currentText = textArray[index];
+    document.getElementById("typing").innerHTML = currentText.slice(0, charIndex);
+    charIndex++;
+    if(charIndex > currentText.length){
+        charIndex = 0;
+        index = (index + 1) % textArray.length;
+        setTimeout(typeEffect, 1000);
+    } else { setTimeout(typeEffect, 80); }
+}
+typeEffect();
+
+// Current Year
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

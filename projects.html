@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects – Mariful Haque</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+/* RESET */
+* {margin:0; padding:0; box-sizing:border-box;}
+body {
+    font-family:"Poppins", sans-serif;
+    background: linear-gradient(135deg, #0A192F, #112240, #0A192F);
+    min-height:100vh;
+    color:#E6F1FF;
+}
+
+/* Navbar */
+.navbar {
+    text-align:center;
+    padding:20px 0;
+    background: rgba(10,25,47,0.6);
+    backdrop-filter: blur(10px);
+    border-bottom:1px solid rgba(255,255,255,0.08);
+}
+.navbar a {
+    color:#CCD6F6;
+    margin:0 18px;
+    text-decoration:none;
+    font-weight:500;
+    font-size:16px;
+    transition:.3s;
+}
+.navbar a:hover{color:#64FFDA;}
+
+/* Container */
+.container {
+    max-width:1000px;
+    margin:70px auto;
+    padding:20px;
+    text-align:center;
+}
+h1 {
+    font-size:40px;
+    font-weight:600;
+    letter-spacing:1px;
+    color:#64FFDA;
+    margin-bottom:30px;
+}
+
+/* Projects Grid */
+.projects-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+/* Project Card */
+.card {
+    background: rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.09);
+    backdrop-filter: blur(10px);
+    border-radius:18px;
+    padding:25px 20px;
+    text-align:left;
+    transition:0.35s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow:0 12px 40px rgba(100,255,218,0.15);
+    border-color:#64FFDA;
+}
+.card img {
+    width:100%;
+    border-radius:12px;
+    margin-bottom:15px;
+}
+.card h3 {
+    font-size:22px;
+    color:#64FFDA;
+    margin-bottom:10px;
+}
+.card p {
+    font-size:16px;
+    color:#C9D1E0;
+    line-height:1.6;
+}
+.card a {
+    color:#64FFDA;
+    font-weight:500;
+    text-decoration:none;
+    transition:.3s;
+}
+.card a:hover{text-decoration:underline;}
+
+/* Footer */
+footer {
+    margin-top:60px;
+    padding:20px 0;
+    text-align:center;
+    color:#A8B2D1;
+    border-top:1px solid rgba(255,255,255,0.1);
+    background: rgba(10,25,47,0.7);
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a style="color:#64FFDA;" href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="resume.html">Resume</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<div class="container">
+<h1>My Projects</h1>
+
+<div class="projects-grid">
+
+    <!-- Project 1 -->
+    <div class="card">
+        <img src="https://api.reliasoftware.com/uploads/social_media_clone_flutter_project_ideas_b981d8bdcc.webp" alt="Project 1">
+        <h3>Flutter Portfolio App</h3>
+        <p>A clean and responsive Flutter app showcasing portfolio projects with smooth navigation and UI/UX design.</p>
+        <a href="#" target="_blank">View Project</a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeVf_UA98_Mv9jcBTyWLIMrkNUAw1rzvgJVwhLdEYhrlE6rGIpcdqalazqW8gz9DCyGa8&usqp=CAU" alt="Project 2">
+        <h3>Python Chatbot</h3>
+        <p>AI-powered chatbot built in Python for interactive conversations and task automation.</p>
+        <a href="#" target="_blank">View Project</a>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="card">
+        <img src="https://img.freepik.com/premium-vector/website-landing-page-template-design_751855-58.jpg" alt="Project 3">
+        <h3>Website Landing Page</h3>
+        <p>Responsive landing page created with HTML, CSS, and JavaScript for a product showcase.</p>
+        <a href="#" target="_blank">View Project</a>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="card">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/7fb979108549437.5fbff34906db1.jpg" alt="Project 4">
+        <h3>Task Manager App</h3>
+        <p>A Flutter-based task manager application with local storage and notifications.</p>
+        <a href="#" target="_blank">View Project</a>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="card">
+        <img src="https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2016/06/adobe-premiere-pro-cc-vr-video-editing-1021x580.jpg" alt="Project 5">
+        <h3>Basic Video Editor</h3>
+        <p>Desktop video editing tool with simple cutting, trimming, and merging features.</p>
+        <a href="#" target="_blank">View Project</a>
+    </div>
+
+    <!-- Project 6 -->
+    <div class="card">
+        <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/graphic-design-website-templates.jpg" alt="Project 6">
+        <h3>Graphics Design Templates</h3>
+        <p>Collection of creative graphics templates designed for social media posts and banners.</p>
+        <a href="#" target="_blank">View Project</a>
+    </div>
+
+</div>
+</div>
+
+<footer>
+   © 2025 Mariful Haque — All Rights Reserved
+</footer>
+
+</body>
+</html>

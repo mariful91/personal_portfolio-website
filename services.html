@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services – Mariful Haque</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+/* RESET */
+* {margin:0; padding:0; box-sizing:border-box;}
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #0A192F, #112240, #0A192F);
+    min-height:100vh;
+    color:#E6F1FF;
+}
+
+/* Navbar */
+.navbar {
+    text-align:center;
+    padding:20px 0;
+    background: rgba(10,25,47,0.6);
+    backdrop-filter: blur(10px);
+    border-bottom:1px solid rgba(255,255,255,0.08);
+}
+.navbar a {
+    color:#CCD6F6;
+    margin:0 18px;
+    text-decoration:none;
+    font-weight:500;
+    font-size:16px;
+    transition:.3s;
+}
+.navbar a:hover{color:#64FFDA;}
+
+/* Container */
+.container {
+    max-width:900px;
+    margin:70px auto;
+    text-align:center;
+    padding:20px;
+}
+h1 {
+    font-size:40px;
+    font-weight:600;
+    letter-spacing:1px;
+    color:#64FFDA;
+    margin-bottom:15px;
+}
+p {
+    font-size:17px;
+    color:#A8B2D1;
+}
+
+/* Grid */
+.services-grid {
+    margin-top:50px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+/* Card */
+.card {
+    background: rgba(255, 255, 255, 0.06);
+    border:1px solid rgba(255,255,255,0.09);
+    backdrop-filter: blur(10px);
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    transition:0.35s ease;
+    cursor:pointer;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow:0 12px 40px rgba(100,255,218,0.15);
+    border-color:#64FFDA;
+}
+.card i {
+    font-size:45px;
+    color:#64FFDA;
+    margin-bottom:15px;
+}
+.card h3 {
+    margin-bottom:10px;
+    color:#E6F1FF;
+    font-size:22px;
+}
+.card p {
+    font-size:16px;
+    color:#C9D1E0;
+    text-align:center;
+    line-height:1.5;
+}
+
+/* Footer */
+footer {
+    margin-top:60px;
+    padding:20px 0;
+    text-align:center;
+    color:#A8B2D1;
+    border-top:1px solid rgba(255,255,255,0.1);
+    background: rgba(10,25,47,0.7);
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a style="color:#64FFDA;" href="services.html">Services</a>
+    <a href="resume.html">Resume</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<div class="container">
+<h1>My Services</h1>
+<p>Here are the professional services I offer. I focus on quality, clean code, and creative solutions.</p>
+
+<div class="services-grid">
+
+    <!-- Service 1 -->
+    <div class="card">
+        <i class="fa-solid fa-code"></i>
+        <h3>Web Development</h3>
+        <p>Building responsive, high-performance websites using modern technologies like HTML, CSS, JavaScript, and Flutter Web.</p>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="card">
+        <i class="fa-brands fa-android"></i>
+        <h3>App Development</h3>
+        <p>Developing cross-platform mobile apps with Flutter that are fast, reliable, and user-friendly.</p>
+    </div>
+
+    <!-- Service 3 -->
+    <div class="card">
+        <i class="fa-solid fa-database"></i>
+        <h3>Backend Development</h3>
+        <p>Creating secure and scalable backends using Python, Firebase, and RESTful APIs for smooth app and website performance.</p>
+    </div>
+
+    <!-- Service 4 -->
+    <div class="card">
+        <i class="fa-solid fa-lightbulb"></i>
+        <h3>UI/UX Design</h3>
+        <p>Designing modern, intuitive, and attractive user interfaces to enhance user experience and engagement.</p>
+    </div>
+
+</div>
+</div>
+
+<footer>
+   © 2025 Mariful Haque — All Rights Reserved
+</footer>
+
+</body>
+</html>
